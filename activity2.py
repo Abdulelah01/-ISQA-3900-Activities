@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<!--
-Name        : Abdulelah Almubarak
-Class       : 3900 
-Due         : Sep.3
-
-
-Name: Abdulelah Almubarak
-Email: aalmubarak@unomaha.edu
-
-
--->
 
 
 <html lang="en">
