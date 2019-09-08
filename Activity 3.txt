@@ -1,0 +1,36 @@
+print("ISQA 3900 Lumber Price Calculator")
+print("You will be asked the number of board feet for the purchase and the type of lumber (common or select) ")
+print()
+#get input from the user
+while True:
+    while True:
+        Number_of_board_feet = input("Enter number of board feet:")
+        if Number_of_board_feet.isdigit() and int(Number_of_board_feet) >= 0:
+            break
+    while True:
+        select_lumber_or_common_lumber = input("Enter a 1 for select lumber or 2 for common lumber")
+        if select_lumber_or_common_lumber.isdigit() and 0 < int(select_lumber_or_common_lumber) < 3:
+            break
+
+
+    if select_lumber_or_common_lumber == 2:
+        Dollers = 1
+    else:
+        Dollers = 2
+
+    total = int(Number_of_board_feet) * Dollers
+    if total > 50000:
+        discount = 20
+    elif total > 10000:
+        discount = 10
+    else:
+        discount = 0
+    total = round((int(Number_of_board_feet) * Dollers) * ((100 - discount) / 100))
+    print ("")
+    print("total price for the lumber is: ", total)
+
+    print("")
+    feedback = input("Continue (y/n)?: ")
+
+    if feedback != "y":
+        break
